@@ -14,5 +14,7 @@ rules:
 # Block ads
 - RULE-SET,adblock,REJECT
 ```
+Setelah di test dengan situs [Adblock Test](https://d3ward.github.io/toolz/adblock.html) hasilnya:
+[![2022-06-08-213555-1920x986-scrot.png](https://i.postimg.cc/0yCf9YQK/2022-06-08-213555-1920x986-scrot.png)](https://postimg.cc/CRzDNfbw)
 
 **Sumber: [Energized Protection](https://github.com/EnergizedProtection/block)**
