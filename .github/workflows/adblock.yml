@@ -20,7 +20,6 @@ jobs:
           sed -ie '/^#/! s/^/  - DOMAIN,/' extensions_extreme.yaml
           sed -i '\|# E N E R G I Z E D  B E G I N S|,\|^# --------------------------------------------|{s/^# --------------------------------------------/# E N E R G I Z E D  B E G I N S\n# --------------------------------------------\npayload:/p;d}' extensions_extreme.yaml
           cat extensions_extreme.yaml >> energized_blu_adblock.yaml
-          sed -ie '/^#/! s/^/DOMAIN,/' energized_blu_adblock.yaml
           rm -fr energized_blu_adblock.yamle extensions_extreme.yamle extensions_extreme.yaml
           
       - uses: stefanzweifel/git-auto-commit-action@v4
