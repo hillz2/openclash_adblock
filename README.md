@@ -1,7 +1,7 @@
 # openclash adblock
-Ini adalah adblock untuk openclash, source list diambil dari **Energized Blu** yang digabung dengan **Xtreme Extension Pack**. Source list diupdate setiap hari secara otomatis oleh bot github.
+Ini adalah adblock untuk openclash, source list diambil dari **Energized Blu**. Source list diupdate setiap hari secara otomatis oleh bot github.
 
-Untuk menggunakan, modifikasi `config.yaml` pada `/etc/openclash/config/config.yaml` seperti ini:
+Untuk menggunakan, edit `config.yaml` pada `/etc/openclash/config/config.yaml` seperti ini:
 ```
 rule-providers:
   adblock:
