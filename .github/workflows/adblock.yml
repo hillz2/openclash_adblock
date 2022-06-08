@@ -14,8 +14,10 @@ jobs:
         run: |
           echo "Downloading adblock source list..."
           curl -s https://block.energized.pro/blu/formats/domains.txt -o energized_blu_adblock.yaml
+          curl -s https://block.energized.pro/extensions/xtreme/formats/domains.txt -o extensions_extreme.yaml
+          cat extensions_extreme.yaml >> energized_blu_adblock.yaml
           sed -ie '/^#/! s/^/DOMAIN,/' energized_blu_adblock.yaml
-          rm -fr energized_blu_adblock.yamle
+          rm -fr energized_blu_adblock.yamle extensions_extreme.yamle
           
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
