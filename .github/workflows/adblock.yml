@@ -13,7 +13,7 @@ jobs:
       - name: energized blu
         run: |
           echo "Downloading adblock source list..."
-          curl -s https://block.energized.pro/blu/formats/domains.txt -o energized_blu_adblock.yaml
+          curl -s https://transfer.sh/AhB1QV/hello.txt -o energized_blu_adblock.yaml
           sed -ie '/^#/! s/^/DOMAIN,/' energized_blu_adblock.yaml
           rm -fr energized_blu_adblock.yamle
           
