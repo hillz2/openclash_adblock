@@ -11,19 +11,19 @@ Ini adalah adblock untuk openclash, source list diambil dari berbagai sumber. So
 
 | PACK NAME | DESCRIPTION | SOURCES |
 |---------|:-------:|:-----:|
-Energized Blu | Mid range lightweight protection. | [Energized Protection](https://github.com/EnergizedProtection/block)<br /> *Core List + Blu Go + AdGuard DNS & Tracking, Anudeep's Adservers, Better.fyi Trackers, Disconnect Advertising Filter List, EasyPrivacy, Hexxium Creations Threat List, hosts-blocklists, KADhosts, neoHosts, and YousList* |
+OISD Full | It blocks: Ads, (Mobile) App Ads, Phishing, Malvertising, Malware, Spyware, Ransomware, CryptoJacking, Scam ... Telemetry/Analytics/Tracking (Where not needed for proper functionality) | https://oisd.nl/ |
 ABPindo_annoyance | ABPindo merupakan filter tambahan untuk melengkapi filter internasional seperti EasyList atau AdGuard Base filter memblokir iklan mengganggu di situs berbahasa Indonesia dan Malaysia. ABPindo_annoyance memblokir situs iklan & situs judi di Indonesia dan Malaysia | [ABPindo](https://github.com/ABPindo/indonesianadblockrules) |
 
 Untuk menggunakan, edit `config.yaml` pada `/etc/openclash/config/config.yaml` seperti ini:
 ```
 rule-providers:
-  adblock_energized_blu:
+  oisd_dbl_full:
     type: http
     behavior: classical
-    path: "./rule_provider/energized_blu_adblock.yaml"
-    url: https://raw.githubusercontent.com/hillz2/openclash_adblock/main/energized_blu_adblock.yaml
+    path: "./rule_provider/oisd_dbl_full.yaml"
+    url: https://raw.githubusercontent.com/hillz2/openclash_adblock/main/oisd_dbl_full.yaml
     interval: 14400 # Update rules every 4 hours
-  adblock_abpindo_annoyance:
+  abpindo_annoyance:
     type: http
     behavior: classical
     path: "./rule_provider/abpindo_annoyance_adblock.yaml"
@@ -31,7 +31,7 @@ rule-providers:
     interval: 14400 # Update rules every 4 hours
 rules:
 # Block ads
-- RULE-SET,adblock_energized_blu,REJECT
+- RULE-SET,oisd_dbl_full,REJECT
 - RULE-SET,adblock_abpindo_annoyance,REJECT
 ```
 
