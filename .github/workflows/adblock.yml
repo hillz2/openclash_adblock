@@ -13,7 +13,7 @@ jobs:
       - name: oisd_dbl_full
         run: |
           echo "Downloading OISD Full source list..."
-          curl -s https://dbl.oisd.nl/ oisd_dbl_full.yaml
+          curl -s https://dbl.oisd.nl/ -o oisd_dbl_full.yaml
           sed -ie '/^#/! s/^/  - DOMAIN,/' oisd_dbl_full.yaml
           sed -i '7s/  - DOMAIN,/\npayload:/' oisd_dbl_full.yaml
           rm -fr oisd_dbl_full.yamle
