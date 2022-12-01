@@ -10,13 +10,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: energized blu
+      - name: oisd_dbl_full
         run: |
-          echo "Downloading Energized Blu source list..."
-          curl -s https://block.energized.pro/blu/formats/domains.txt -o energized_blu_adblock.yaml
-          sed -ie '/^#/! s/^/  - DOMAIN,/' energized_blu_adblock.yaml
-          sed -i '\|# E N E R G I Z E D  B E G I N S|,\|^# --------------------------------------------|{s/^# --------------------------------------------/# E N E R G I Z E D  B E G I N S\n# --------------------------------------------\npayload:/p;d}' energized_blu_adblock.yaml
-          rm -fr energized_blu_adblock.yamle
+          echo "Downloading OISD Full source list..."
+          curl -s https://dbl.oisd.nl/ oisd_dbl_full.yaml
+          sed -ie '/^#/! s/^/  - DOMAIN,/' oisd_dbl_full.yaml
+          sed -i '7s/  - DOMAIN,/\npayload:/' oisd_dbl_full.yaml
+          rm -fr oisd_dbl_full.yamle
           
           echo "Downloading ABPindo source list..."
           curl -s https://raw.githubusercontent.com/ABPindo/indonesianadblockrules/master/subscriptions/domain_annoyance.txt -o abpindo_annoyance_adblock.yaml
