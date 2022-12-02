@@ -32,7 +32,7 @@ rule-providers:
 rules:
 # Block ads
 - RULE-SET,oisd_dbl_full,REJECT
-- RULE-SET,adblock_abpindo_annoyance,REJECT
+- RULE-SET,abpindo_annoyance,REJECT
 ```
 
 Setelah di test dengan situs [Adblock Test](https://d3ward.github.io/toolz/adblock.html) hasilnya:
