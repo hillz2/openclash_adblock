@@ -11,28 +11,29 @@ Ini adalah adblock untuk openclash, source list diambil dari berbagai sumber. So
 
 | PACK NAME | DESCRIPTION | SOURCES |
 |---------|:-------:|:-----:|
-OISD Full | It blocks: Ads, (Mobile) App Ads, Phishing, Malvertising, Malware, Spyware, Ransomware, CryptoJacking, Scam ... Telemetry/Analytics/Tracking (Where not needed for proper functionality) | https://oisd.nl/ |
-ABPindo_annoyance | ABPindo merupakan filter tambahan untuk melengkapi filter internasional seperti EasyList atau AdGuard Base filter memblokir iklan mengganggu di situs berbahasa Indonesia dan Malaysia. ABPindo_annoyance memblokir situs iklan & situs judi di Indonesia dan Malaysia | [ABPindo](https://github.com/ABPindo/indonesianadblockrules) |
+AdAway | AdAway is an open source ad blocker for Android using the hosts file. | https://adaway.org/ |
+Adguard DNS | Filter composed of several other filters (AdGuard Base filter, Social media filter, Tracking Protection filter, Mobile ads filter, EasyList, EasyPrivacy, etc) and simplified specifically to be better compatible with DNS-level ad blocking. | [Adguard DNS Github](https://github.com/AdguardTeam/AdGuardSDNSFilter) |
 
 Untuk menggunakan, edit `config.yaml` pada `/etc/openclash/config/config.yaml` seperti ini:
 ```
 rule-providers:
-  oisd_dbl_full:
+  adaway:
     type: http
     behavior: classical
-    path: "./rule_provider/oisd_dbl_full.yaml"
-    url: https://raw.githubusercontent.com/hillz2/openclash_adblock/main/oisd_dbl_full.yaml
+    path: "./rule_provider/adaway.yaml"
+    url: https://raw.githubusercontent.com/hillz2/openclash_adblock/main/adaway.yaml
     interval: 14400 # Update rules every 4 hours
-  abpindo_annoyance:
+  adguard_dns:
     type: http
     behavior: classical
-    path: "./rule_provider/abpindo_annoyance_adblock.yaml"
-    url: https://raw.githubusercontent.com/hillz2/openclash_adblock/main/abpindo_annoyance_adblock.yaml
+    path: "./rule_provider/AdguardDNS.yaml"
+    url: https://raw.githubusercontent.com/hillz2/openclash_adblock/main/AdguardDNS.yaml
     interval: 14400 # Update rules every 4 hours
+  
 rules:
 # Block ads
-- RULE-SET,oisd_dbl_full,REJECT
-- RULE-SET,abpindo_annoyance,REJECT
+- RULE-SET,adaway,REJECT
+- RULE-SET,adguard_dns,REJECT
 ```
 
 Setelah di test dengan situs [Adblock Test](https://d3ward.github.io/toolz/adblock.html) hasilnya:
