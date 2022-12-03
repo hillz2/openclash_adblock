@@ -27,20 +27,6 @@ jobs:
           sed -i '20s/#/#\n\npayload:/' adaway.yaml
           rm -fr adaway.yamle
           
-          echo "Downloading Easyprivacy source list..."
-          curl -s https://v.firebog.net/hosts/Easyprivacy.txt -o easyprivacy.yaml
-          sed -i '/^$/d' easyprivacy.yaml
-          sed -ie '/^#/! s/^/  - DOMAIN,/' easyprivacy.yaml
-          sed -i '6i \\npayload:' easyprivacy.yaml
-          rm -fr easyprivacy.yamle
-          
-          echo "Downloading easylist source list..."
-          curl -s https://v.firebog.net/hosts/Easylist.txt -o easylist.yaml
-          sed -i '/^$/d' easylist.yaml
-          sed -ie '/^#/! s/^/  - DOMAIN,/' easylist.yaml
-          sed -i '6i \\npayload:' easylist.yaml
-          rm -fr easylist.yamle
-          
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Automatic update
