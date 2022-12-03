@@ -10,20 +10,29 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: oisd_dbl_full
+      - name: adblock
         run: |
-          echo "Downloading OISD Full source list..."
-          curl -s https://dbl.oisd.nl/ -o oisd_dbl_full.yaml
-          sed -ie '/^#/! s/^/  - DOMAIN,/' oisd_dbl_full.yaml
-          sed -i '7s/  - DOMAIN,/\npayload:/' oisd_dbl_full.yaml
-          rm -fr oisd_dbl_full.yamle
+          echo "Downloading Adguard DNS source list..."
+          curl -s https://v.firebog.net/hosts/AdguardDNS.txt -o AdguardDNS.yaml
+          sed -i '/^$/d' AdguardDNS.yaml
+          sed -ie '/^#/! s/^/  - DOMAIN,/' AdguardDNS.yaml
+          sed -i '6i \\npayload:' AdguardDNS.yaml
+          rm -fr AdguardDNS.yamle
           
-          echo "Downloading ABPindo source list..."
-          curl -s https://raw.githubusercontent.com/ABPindo/indonesianadblockrules/master/subscriptions/domain_annoyance.txt -o abpindo_annoyance_adblock.yaml
-          sed -ie 's/^/  - DOMAIN,/' abpindo_annoyance_adblock.yaml
-          sed -i '1 i\payload:' abpindo_annoyance_adblock.yaml
-          sed -i '1 i\# Sumber: ABPindo_annoyance https://github.com/ABPindo/indonesianadblockrules' abpindo_annoyance_adblock.yaml
-          rm -fr abpindo_annoyance_adblock.yamle
+          echo "Downloading AdAway source list..."
+          curl -s 'https://adaway.org/hosts.txt' -o adaway.yaml
+          sed -i 's/127\.0\.0\.1  localhost//g; s/::1  localhost//g; s/^127\.0\.0\.1\s/  - DOMAIN,/g' adaway.yaml
+          sed -i 's/^#\s\[.*\]$//g' adaway.yaml
+          sed -i '/^$/d' adaway.yaml
+          sed -i '20s/#/#\n\npayload:/' adaway.yaml
+          rm -fr adaway.yamle
+          
+          echo "Downloading Easyprivacy source list..."
+          curl -s https://v.firebog.net/hosts/Easyprivacy.txt -o easyprivacy.yaml
+          sed -i '/^$/d' easyprivacy.yaml
+          sed -ie '/^#/! s/^/  - DOMAIN,/' easyprivacy.yaml
+          sed -i '6i \\npayload:' easyprivacy.yaml
+          rm -fr easyprivacy.yamle
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Automatic update
