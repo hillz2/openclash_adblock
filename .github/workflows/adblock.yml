@@ -28,7 +28,7 @@ jobs:
           rm -fr adaway.yamle
           
           echo "Downloading ABPIndo block list..."
-          curl -s 'https://raw.githubusercontent.com/ABPindo/indonesianadblockrules/master/subscriptions/domain.txt' ABPindo.yaml
+          curl -s 'https://raw.githubusercontent.com/ABPindo/indonesianadblockrules/master/subscriptions/domain.txt' -o ABPindo.yaml
           sed -ie '/^#/! s/^/  - DOMAIN,/' ABPindo.yaml
           sed -i '1s/^/payload:\n/' ABPindo.yaml
           rm -fr ABPindo.yamle
