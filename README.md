@@ -13,6 +13,7 @@ Ini adalah adblock untuk openclash, source list diambil dari berbagai sumber. So
 |---------|:-------:|:-----:|
 AdAway | AdAway is an open source ad blocker for Android using the hosts file. | https://adaway.org/ |
 Adguard DNS | Filter composed of several other filters (AdGuard Base filter, Social media filter, Tracking Protection filter, Mobile ads filter, EasyList, EasyPrivacy, etc) and simplified specifically to be better compatible with DNS-level ad blocking. | [Adguard DNS Github](https://github.com/AdguardTeam/AdGuardSDNSFilter) |
+ABPindo | ABPindo merupakan daftar penapis/penyaring iklan di situs berbahasa Indonesia dan Malaysia, guna melengkapi penapis internasional seperti EasyList atau AdGuard Base filter. | [ABPindo](https://github.com/ABPindo/indonesianadblockrules) |
 
 Untuk menggunakan, edit `config.yaml` pada `/etc/openclash/config/config.yaml` seperti ini:
 ```
@@ -29,11 +30,18 @@ rule-providers:
     path: "./rule_provider/AdguardDNS.yaml"
     url: https://raw.githubusercontent.com/hillz2/openclash_adblock/main/AdguardDNS.yaml
     interval: 14400 # Update rules every 4 hours
-  
+  abpindo:
+    type: http
+    behavior: classical
+    path: "./rule_provider/ABPindo.yaml"
+    url: https://raw.githubusercontent.com/hillz2/openclash_adblock/main/ABPindo.yaml
+    interval: 14400 # Update rules every 4 hours
+    
 rules:
 # Block ads
 - RULE-SET,adaway,REJECT
 - RULE-SET,adguard_dns,REJECT
+- RULE-SET,abpindo,REJECT
 ```
 
 Setelah di test dengan situs [Adblock Test](https://d3ward.github.io/toolz/adblock.html) hasilnya:
