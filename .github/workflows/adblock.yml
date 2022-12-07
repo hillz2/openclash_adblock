@@ -13,11 +13,11 @@ jobs:
       - name: adblock
         run: |
           echo "Downloading Adguard DNS block list..."
-          curl -s https://v.firebog.net/hosts/AdguardDNS.txt -o AdguardDNS.yaml
-          sed -i '/^$/d' AdguardDNS.yaml
+          curl -s https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt -o filter.txt
+          grep -o -P '(?<=^\|\|).*(?=\^$)' filter.txt | grep -v '\*' > AdguardDNS.yaml
           sed -ie '/^#/! s/^/  - DOMAIN,/' AdguardDNS.yaml
-          sed -i '6i \\npayload:' AdguardDNS.yaml
-          rm -fr AdguardDNS.yamle
+          sed -i '1i payload:' AdguardDNS.yaml
+          rm -fr AdguardDNS.yamle filter.txte filter.txt
           
           echo "Downloading AdAway block list..."
           curl -s 'https://adaway.org/hosts.txt' -o adaway.yaml
