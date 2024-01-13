@@ -7,45 +7,29 @@
 <i>(Mari mengenang masa lalu dulu. Click on the image above)</i><br /><br />
 </div>
 
-Ini adalah adblock untuk openclash, source list diambil dari berbagai sumber. Source list diupdate setiap hari secara otomatis oleh bot github.
+Ini adalah adblock untuk openclash, source list diambil dari `oisd.nl`. Source list diupdate setiap hari secara otomatis oleh bot github.
 
 | PACK NAME | DESCRIPTION | SOURCES |
 |---------|:-------:|:-----:|
-AdAway | AdAway is an open source ad blocker for Android using the hosts file. | https://adaway.org/ |
-Adguard DNS | Filter composed of several other filters (AdGuard Base filter, Social media filter, Tracking Protection filter, Mobile ads filter, EasyList, EasyPrivacy, etc) and simplified specifically to be better compatible with DNS-level ad blocking. | [Adguard DNS Github](https://github.com/AdguardTeam/AdGuardSDNSFilter) |
-ABPindo | ABPindo merupakan daftar penapis/penyaring iklan di situs berbahasa Indonesia dan Malaysia, guna melengkapi penapis internasional seperti EasyList atau AdGuard Base filter. | [ABPindo](https://github.com/ABPindo/indonesianadblockrules) |
+oisd big | Blocks Ads, (Mobile) App Ads, Phishing, Malvertising, Malware, Spyware, Ransomware, CryptoJacking, Scam, ... Telemetry/Analytics/Tracking (Where not needed for proper functionality) | https://oisd.nl/ |
 
 Untuk menggunakan, edit `config.yaml` pada `/etc/openclash/config/config.yaml` seperti ini:
 ```
 rule-providers:
-  adaway:
+  oisd_big:
     type: http
     behavior: classical
-    path: "./rule_provider/adaway.yaml"
-    url: https://raw.githubusercontent.com/hillz2/openclash_adblock/main/adaway.yaml
-    interval: 14400 # Update rules every 4 hours
-  adguard_dns:
-    type: http
-    behavior: classical
-    path: "./rule_provider/AdguardDNS.yaml"
-    url: https://raw.githubusercontent.com/hillz2/openclash_adblock/main/AdguardDNS.yaml
-    interval: 14400 # Update rules every 4 hours
-  abpindo:
-    type: http
-    behavior: classical
-    path: "./rule_provider/ABPindo.yaml"
-    url: https://raw.githubusercontent.com/hillz2/openclash_adblock/main/ABPindo.yaml
-    interval: 14400 # Update rules every 4 hours
+    path: "./rule_provider/oisd_big.yaml"
+    url: https://raw.githubusercontent.com/hillz2/openclash_adblock/main/oisd_big.yaml
+    interval: 28800 # Update rules every 8 hours
     
 rules:
-# Block ads
-- RULE-SET,adaway,REJECT
-- RULE-SET,adguard_dns,REJECT
-- RULE-SET,abpindo,REJECT
+# AdBlock
+- RULE-SET,oisd_big,REJECT
 ```
 
 Setelah di test dengan situs [Adblock Test](https://d3ward.github.io/toolz/adblock.html) hasilnya:
 
-[![2022-06-08-213555-1920x986-scrot.png](https://i.postimg.cc/0yCf9YQK/2022-06-08-213555-1920x986-scrot.png)](https://postimg.cc/CRzDNfbw)
+![2022-06-08-213555-1920x986-scrot.png](https://i.ibb.co/HVxLfYz/2024-01-13-185840-1920x973-scrot.png)
 
 Hasil di situs adblock test bisa berbeda beda karena source list diupdate setiap hari.
