@@ -12,27 +12,6 @@ jobs:
       - uses: actions/checkout@v3
       - name: adblock
         run: |
-          echo "Downloading Adguard DNS block list..."
-          curl -s https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt -o filter.txt
-          grep -o -P '(?<=^\|\|).*(?=\^$)' filter.txt | grep -v '\*' > AdguardDNS.yaml
-          sed -ie '/^#/! s/^/  - DOMAIN-SUFFIX,/' AdguardDNS.yaml
-          sed -i '1i payload:' AdguardDNS.yaml
-          rm -fr AdguardDNS.yamle filter.txte filter.txt
-          
-          echo "Downloading AdAway block list..."
-          curl -s 'https://adaway.org/hosts.txt' -o adaway.yaml
-          sed -i 's/127\.0\.0\.1  localhost//g; s/::1  localhost//g; s/^127\.0\.0\.1\s/  - DOMAIN-SUFFIX,/g' adaway.yaml
-          sed -i 's/^#\s\[.*\]$//g' adaway.yaml
-          sed -i '/^$/d' adaway.yaml
-          sed -i '20s/#/#\n\npayload:/' adaway.yaml
-          rm -fr adaway.yamle
-          
-          echo "Downloading ABPIndo block list..."
-          curl -s 'https://raw.githubusercontent.com/ABPindo/indonesianadblockrules/master/subscriptions/domain.txt' -o ABPindo.yaml
-          sed -ie '/^#/! s/^/  - DOMAIN-SUFFIX,/' ABPindo.yaml
-          sed -i '1s/^/payload:\n/' ABPindo.yaml
-          rm -fr ABPindo.yamle
-
           echo "Downloading oisd big block list..."
           curl -s 'https://big.oisd.nl/domainswild' -o oisd_big_domainswild.txt
           awk '/^\*\./ && !x {print "payload:"; x=1} 1' oisd_big_domainswild.txt > oisd_big.yaml
