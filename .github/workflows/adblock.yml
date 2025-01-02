@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@main
-      - name: adblock
+      - name: oisd_big
         run: |
           echo "Downloading oisd big block list..."
           curl -s 'https://big.oisd.nl/domainswild' -o oisd_big_domainswild.txt
