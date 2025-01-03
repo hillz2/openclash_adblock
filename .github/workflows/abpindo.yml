@@ -1,26 +1,19 @@
-name: ABPindo
+name: Download ABPindo block list
 
 on:
-  push:
-    branches:
-      - main
-  workflow_dispatch:
   schedule:
-    - cron: "0 0 * * *" # Runs daily at midnight UTC
+    - cron: 0 */12 * * *
+  workflow_dispatch:
 
 jobs:
-  process_adblock_list:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Download adblock domain list
+      - uses: actions/checkout@main
+      - name: adblock
         run: |
+          echo "Downloading ABPindo list..."
           curl -o domain.txt https://raw.githubusercontent.com/ABPindo/indonesianadblockrules/refs/heads/master/subscriptions/domain.txt
-
-      - name: Process domain list
-        run: |
           # Add source comments and payload header
           echo -e "# Source: https://github.com/ABPindo/indonesianadblockrules" > abpindo.yaml
           echo -e "# OpenClash AdBlock: https://github.com/hillz2/openclash_adblock" >> abpindo.yaml
@@ -30,17 +23,7 @@ jobs:
           while read -r domain; do
             echo "  - DOMAIN-SUFFIX,${domain}" >> abpindo.yaml
           done < domain.txt
-
-      - name: Clean up untracked files
-        run: git clean -fd
-
-      - name: Check if there are changes to commit
-        run: |
-          git diff --exit-code || echo "There are changes to commit"
-
-      - name: Commit and push changes
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add abpindo.yaml
-          git diff --quiet || git commit -m "Update abpindo.yaml [skip ci]" && git push
+          rm -fr domain.txt
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Automatic update
