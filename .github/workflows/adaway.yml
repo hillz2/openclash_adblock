@@ -29,7 +29,7 @@ jobs:
 
           # Input and output files
           input_file="hosts.txt"
-          output_file="output.yaml"
+          output_file="adaway.yaml"
 
           # Process the file
           awk '
@@ -70,6 +70,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add output.yaml
-          git commit -m "Update output.yaml [skip ci]"
+          git add adaway.yaml
+          git commit -m "Update adaway.yaml [skip ci]"
           git push
