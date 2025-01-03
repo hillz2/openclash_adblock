@@ -13,6 +13,8 @@ jobs:
       # Step 1: Checkout repository
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }} # Use the default GitHub token to push changes
 
       # Step 2: Download the hosts.txt file
       - name: Download hosts.txt
@@ -63,9 +65,11 @@ jobs:
       - name: Run transformation script
         run: ./transform_hosts.sh
 
-      # Step 5: Upload the processed file as an artifact
-      - name: Upload processed file
-        uses: actions/upload-artifact@v4
-        with:
-          name: processed-hosts
-          path: output.yaml
+      # Step 5: Commit and push the processed file
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add output.yaml
+          git commit -m "Update output.yaml [skip ci]"
+          git push
