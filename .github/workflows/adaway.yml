@@ -65,7 +65,8 @@ jobs:
 
       # Step 5: Upload the processed file as an artifact
       - name: Upload processed file
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: processed-hosts
           path: output.yaml
+          commit_message: Automatic update
