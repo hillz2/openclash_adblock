@@ -34,10 +34,13 @@ jobs:
       - name: Clean up untracked files
         run: git clean -fd
 
+      - name: Check if there are changes to commit
+        run: |
+          git diff --exit-code || echo "There are changes to commit"
+
       - name: Commit and push changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add abpindo.yaml
-          git commit -m "Update abpindo.yaml [skip ci]"
-          git push
+          git diff --quiet || git commit -m "Update abpindo.yaml [skip ci]" && git push
