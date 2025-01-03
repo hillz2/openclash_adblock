@@ -31,12 +31,6 @@ jobs:
             echo "  - DOMAIN-SUFFIX,${domain}" >> abpindo.yaml
           done < domain.txt
 
-      - name: Upload abpindo.yaml to the repository
-        uses: actions/upload-artifact@v4
-        with:
-          name: abpindo.yaml
-          path: abpindo.yaml
-
       - name: Commit and push changes
         run: |
           git config user.name "github-actions[bot]"
