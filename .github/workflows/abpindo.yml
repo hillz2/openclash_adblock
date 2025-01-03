@@ -1,0 +1,44 @@
+name: ABPindo
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  process_adblock_list:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Download adblock domain list
+        run: |
+          curl -o domain.txt https://raw.githubusercontent.com/ABPindo/indonesianadblockrules/refs/heads/master/subscriptions/domain.txt
+
+      - name: Process domain list
+        run: |
+          # Add source comments and payload header
+          echo -e "# Source: https://github.com/ABPindo/indonesianadblockrules" > abpindo.yaml
+          echo -e "# OpenClash AdBlock: https://github.com/hillz2/openclash_adblock" >> abpindo.yaml
+          echo -e "\npayload:" >> abpindo.yaml
+
+          # Process the domain list and add '- DOMAIN-SUFFIX,'
+          while read -r domain; do
+            echo "  - ${domain}, DOMAIN-SUFFIX" >> abpindo.yaml
+          done < domain.txt
+
+      - name: Upload abpindo.yaml to the repository
+        uses: actions/upload-artifact@v4
+        with:
+          name: abpindo.yaml
+          path: abpindo.yaml
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add abpindo.yaml
+          git commit -m "Update abpindo.yaml with processed domain list"
+          git push
