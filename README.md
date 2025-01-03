@@ -11,7 +11,9 @@ Ini adalah adblock untuk openclash, source list diambil dari `oisd.nl`. Source l
 
 | PACK NAME | DESCRIPTION | SOURCES |
 |---------|:-------:|:-----:|
-oisd big | Blocks Ads, (Mobile) App Ads, Phishing, Malvertising, Malware, Spyware, Ransomware, CryptoJacking, Scam, ... Telemetry/Analytics/Tracking (Where not needed for proper functionality) | https://oisd.nl/ |
+oisd big | Blocks Ads, (Mobile) App Ads, Phishing, Malvertising, Malware, Spyware, Ransomware, CryptoJacking, Scam, ... Telemetry/Analytics/Tracking (Where not needed for proper functionality) | https://big.oisd.nl/domainswild |
+oisd small | Mainly focusses on blocking ads | https://small.oisd.nl/domainswild |
+adaway | Blocklist suitable for android / iOS, it focuses on blocking mobile ad providers. | https://adaway.org/hosts.txt |
 
 Untuk menggunakan, edit `config.yaml` pada `/etc/openclash/config/config.yaml` seperti ini:
 ```
