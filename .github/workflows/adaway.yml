@@ -3,7 +3,7 @@ name: Process AdAway Hosts
 on:
   workflow_dispatch: # Allows manual trigger
   schedule:
-    - cron: "0 */12 * * *" # Runs every 12 hours
+    - cron: "0 0 * * *" # Runs daily at midnight UTC
 
 jobs:
   process-hosts:
@@ -12,7 +12,7 @@ jobs:
     steps:
       # Step 1: Checkout repository
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
 
       # Step 2: Download the hosts.txt file
       - name: Download hosts.txt
@@ -64,4 +64,8 @@ jobs:
         run: ./transform_hosts.sh
 
       # Step 5: Upload the processed file as an artifact
-      - name: Upload
+      - name: Upload processed file
+        uses: actions/upload-artifact@v3
+        with:
+          name: processed-hosts
+          path: output.yaml
