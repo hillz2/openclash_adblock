@@ -1,0 +1,71 @@
+name: Process AdAway Hosts
+
+on:
+  workflow_dispatch: # Allows manual trigger
+  schedule:
+    - cron: "0 */12 * * *"
+
+jobs:
+  process-hosts:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout repository
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Step 2: Download the hosts.txt file
+      - name: Download hosts.txt
+        run: |
+          curl -o hosts.txt https://adaway.org/hosts.txt
+
+      # Step 3: Create the bash script
+      - name: Create transformation script
+        run: |
+          cat << 'EOF' > transform_hosts.sh
+          #!/bin/bash
+
+          # Input and output files
+          input_file="hosts.txt"
+          output_file="output.yaml"
+
+          # Process the file
+          awk '
+          # Remove localhost lines
+          $0 == "127.0.0.1  localhost" || $0 == "::1  localhost" { next }
+
+          # Replace `127.0.0.1 ` with `  - DOMAIN-SUFFIX,`
+          $1 == "127.0.0.1" { $1 = "  - DOMAIN-SUFFIX,"; print; next }
+
+          # Replace the first occurrence of `^# \[.*\]$` with the required text and `payload:`
+          /^# \[.*\]$/ && !seen_payload {
+            print "# OpenClash AdBlock: https://github.com/hillz2/openclash_adblock\n"
+            print "payload:"
+            seen_payload=1
+            next
+          }
+
+          # Remove all other lines matching `^# \[.*\]$`
+          /^# \[.*\]$/ { next }
+
+          # Skip empty lines immediately after `payload:`
+          seen_payload && $0 == "" { next }
+
+          # Print remaining lines
+          { print }
+          ' "$input_file" > "$output_file"
+
+          echo "Transformation complete. Output saved to $output_file"
+          EOF
+          chmod +x transform_hosts.sh
+
+      # Step 4: Run the transformation script
+      - name: Run transformation script
+        run: ./transform_hosts.sh
+
+      # Step 5: Upload the processed file as an artifact
+      - name: Upload processed file
+        uses: actions/upload-artifact@v3
+        with:
+          name: processed-hosts
+          path: output.yaml
