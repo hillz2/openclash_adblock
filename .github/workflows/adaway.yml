@@ -12,7 +12,7 @@ jobs:
     steps:
       # Step 1: Checkout repository
       - name: Checkout code
-      - uses: actions/checkout@main
+      - uses: actions/checkout@v4
 
       # Step 2: Download the hosts.txt file
       - name: Download hosts.txt
@@ -65,7 +65,7 @@ jobs:
 
       # Step 5: Upload the processed file as an artifact
       - name: Upload processed file
-        uses: stefanzweifel/git-auto-commit-action@v4
+        uses: actions/upload-artifact@v4
         with:
           name: processed-hosts
           path: output.yaml
