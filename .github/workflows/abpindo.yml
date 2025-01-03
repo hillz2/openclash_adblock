@@ -26,7 +26,7 @@ jobs:
 
           # Process the domain list and add '- DOMAIN-SUFFIX,'
           while read -r domain; do
-            echo "  - ${domain}, DOMAIN-SUFFIX" >> abpindo.yaml
+            echo "  - DOMAIN-SUFFIX,${domain}" >> abpindo.yaml
           done < domain.txt
 
       - name: Upload abpindo.yaml to the repository
