@@ -63,7 +63,9 @@ jobs:
 
       # Step 4: Run the transformation script
       - name: Run transformation script
-        run: ./transform_hosts.sh
+        run: |
+          ./transform_hosts.sh
+          rm -fr transform_hosts.sh hosts.txt
 
       # Step 5: Commit and push the processed file
       - name: Commit and push changes
