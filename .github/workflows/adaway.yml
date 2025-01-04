@@ -72,6 +72,13 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add adaway.yaml
-          git commit -m "Update adaway.yaml [skip ci]"
-          git push
+      
+          # Check if there are any changes to commit
+          if git diff --quiet; then
+            echo "No changes to commit."
+          else
+            git add adaway.yaml
+            git commit -m "Update adaway.yaml [skip ci]"
+            git push
+          fi
+
