@@ -1,9 +1,9 @@
-# Version: 202501111910
+# Version: 202501120957
 # Title: oisd small
 # Description: Block. Don't break.
 # Syntax: Domains (wildcards)
-# Entries: 44468
-# Last modified: 2025-01-11T19:10:28+0000
+# Entries: 44475
+# Last modified: 2025-01-12T09:57:50+0000
 # Expires: 1 hours
 # License: https://github.com/sjhgvr/oisd/blob/main/LICENSE
 # Maintainer: Stephan van Ruth
@@ -8651,7 +8651,9 @@ payload:
   - DOMAIN-SUFFIX,bnpknicjeb.com
   - DOMAIN-SUFFIX,bnr.sys.lv
   - DOMAIN-SUFFIX,bnrdom.com
+  - DOMAIN-SUFFIX,bnrs.esexa.online
   - DOMAIN-SUFFIX,bnrs.it
+  - DOMAIN-SUFFIX,bnrs.manrec.cc
   - DOMAIN-SUFFIX,bnrs.shemrec.cc
   - DOMAIN-SUFFIX,bnrsis.com
   - DOMAIN-SUFFIX,bnrslks.com
@@ -10055,6 +10057,7 @@ payload:
   - DOMAIN-SUFFIX,cdn.dsmstats.com
   - DOMAIN-SUFFIX,cdn.eksiup.com
   - DOMAIN-SUFFIX,cdn.falkloo.cloud
+  - DOMAIN-SUFFIX,cdn.faspox.com
   - DOMAIN-SUFFIX,cdn.fedsy.xyz
   - DOMAIN-SUFFIX,cdn.fedykr.com
   - DOMAIN-SUFFIX,cdn.fegivja.com
@@ -16515,7 +16518,6 @@ payload:
   - DOMAIN-SUFFIX,escy55gxubl6.com
   - DOMAIN-SUFFIX,esdykv.com
   - DOMAIN-SUFFIX,eserinemersion.shop
-  - DOMAIN-SUFFIX,esexa.online
   - DOMAIN-SUFFIX,eshkol.one
   - DOMAIN-SUFFIX,eshoohasteeg.com
   - DOMAIN-SUFFIX,eshouloo.net
@@ -17262,7 +17264,6 @@ payload:
   - DOMAIN-SUFFIX,fasfsv-sli.love
   - DOMAIN-SUFFIX,fasgazazxvi.com
   - DOMAIN-SUFFIX,fashionablegangsterexplosion.com
-  - DOMAIN-SUFFIX,faspox.com
   - DOMAIN-SUFFIX,fastad.beepworld.de
   - DOMAIN-SUFFIX,fastapi.net
   - DOMAIN-SUFFIX,fastcdn.info
@@ -17602,6 +17603,7 @@ payload:
   - DOMAIN-SUFFIX,filter-eu.pops.gg
   - DOMAIN-SUFFIX,filter-eu.re-media.info
   - DOMAIN-SUFFIX,filter-eu.saroadexchange.com
+  - DOMAIN-SUFFIX,filter-eu.srvqck.com
   - DOMAIN-SUFFIX,filter.a1.0network.com
   - DOMAIN-SUFFIX,filter.adflores.com
   - DOMAIN-SUFFIX,filter.adflydsp.com
@@ -17671,6 +17673,7 @@ payload:
   - DOMAIN-SUFFIX,filter.safesearchguard.com
   - DOMAIN-SUFFIX,filter.saroadexchange.com
   - DOMAIN-SUFFIX,filter.shieldcheckerservices.com
+  - DOMAIN-SUFFIX,filter.srvqck.com
   - DOMAIN-SUFFIX,filter.srvqck1.com
   - DOMAIN-SUFFIX,filter.themediaad.com
   - DOMAIN-SUFFIX,filter.thetrafficbid.com
@@ -25377,7 +25380,6 @@ payload:
   - DOMAIN-SUFFIX,manomincasaque.com
   - DOMAIN-SUFFIX,manompas.com
   - DOMAIN-SUFFIX,manorfunctions.com
-  - DOMAIN-SUFFIX,manrec.cc
   - DOMAIN-SUFFIX,manrootarbota.com
   - DOMAIN-SUFFIX,mansfieldspurtvan.com
   - DOMAIN-SUFFIX,manslaughterhallucinateenjoyment.com
@@ -31095,6 +31097,8 @@ payload:
   - DOMAIN-SUFFIX,projectwonderful.com
   - DOMAIN-SUFFIX,prolatecyclus.com
   - DOMAIN-SUFFIX,proleclips.com
+  - DOMAIN-SUFFIX,proll.esexa.online
+  - DOMAIN-SUFFIX,proll.manrec.cc
   - DOMAIN-SUFFIX,proll.shemrec.cc
   - DOMAIN-SUFFIX,prologuerussialavender.com
   - DOMAIN-SUFFIX,prologuetwinsmolecule.com
@@ -31563,6 +31567,8 @@ payload:
   - DOMAIN-SUFFIX,pumpkin.abine.com
   - DOMAIN-SUFFIX,punctual-window.com
   - DOMAIN-SUFFIX,punctualflopsubquery.com
+  - DOMAIN-SUFFIX,pundr.esexa.online
+  - DOMAIN-SUFFIX,pundr.manrec.cc
   - DOMAIN-SUFFIX,pundr.shemrec.cc
   - DOMAIN-SUFFIX,pungentsmartlyhoarse.com
   - DOMAIN-SUFFIX,punicajosher.top
@@ -36295,7 +36301,6 @@ payload:
   - DOMAIN-SUFFIX,srv.dynamicyield.com
   - DOMAIN-SUFFIX,srv224.com
   - DOMAIN-SUFFIX,srvd2204.com
-  - DOMAIN-SUFFIX,srvqck.com
   - DOMAIN-SUFFIX,srvupads.com
   - DOMAIN-SUFFIX,srwwce.xyz
   - DOMAIN-SUFFIX,srwww1.com
@@ -36671,6 +36676,7 @@ payload:
   - DOMAIN-SUFFIX,static.schrotundkorn.de
   - DOMAIN-SUFFIX,static.smoads.com
   - DOMAIN-SUFFIX,static.sonicplug.com
+  - DOMAIN-SUFFIX,static.srvqck.com
   - DOMAIN-SUFFIX,static.srvqck1.com
   - DOMAIN-SUFFIX,static.staradsmedia.com
   - DOMAIN-SUFFIX,static.stayedbeh-serving.com
@@ -43517,6 +43523,7 @@ payload:
   - DOMAIN-SUFFIX,xml.shieldcheckerservices.com
   - DOMAIN-SUFFIX,xml.skycommission.com
   - DOMAIN-SUFFIX,xml.speroll.com
+  - DOMAIN-SUFFIX,xml.srvqck.com
   - DOMAIN-SUFFIX,xml.srvqck1.com
   - DOMAIN-SUFFIX,xml.staradsmedia.com
   - DOMAIN-SUFFIX,xml.startbrws-2.online
