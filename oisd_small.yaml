@@ -1,9 +1,9 @@
-# Version: 202501300610
+# Version: 202501301811
 # Title: oisd small
 # Description: Block. Don't break.
 # Syntax: Domains (wildcards)
-# Entries: 44011
-# Last modified: 2025-01-30T06:10:14+0000
+# Entries: 44009
+# Last modified: 2025-01-30T18:11:00+0000
 # Expires: 1 hours
 # License: https://github.com/sjhgvr/oisd/blob/main/LICENSE
 # Maintainer: Stephan van Ruth
@@ -56,7 +56,6 @@ payload:
   - DOMAIN-SUFFIX,03eea1b6dd.com
   - DOMAIN-SUFFIX,03p.info
   - DOMAIN-SUFFIX,04-f-bmf.com
-  - DOMAIN-SUFFIX,0438336acf.0a74314cd1.com
   - DOMAIN-SUFFIX,04424170.xyz
   - DOMAIN-SUFFIX,044da016b3.com
   - DOMAIN-SUFFIX,045fef1509.com
@@ -99,6 +98,7 @@ payload:
   - DOMAIN-SUFFIX,09zyy.com
   - DOMAIN-SUFFIX,0a0d-d3l1vr.b-cdn.net
   - DOMAIN-SUFFIX,0a22eeac91.e46ece0a18.com
+  - DOMAIN-SUFFIX,0a74314cd1.com
   - DOMAIN-SUFFIX,0ab8344566.51cd57d70c.com
   - DOMAIN-SUFFIX,0af2a962b0102942d9a7df351b20be55.com
   - DOMAIN-SUFFIX,0afc4c07a9.9fbdc30642.com
@@ -1089,6 +1089,7 @@ payload:
   - DOMAIN-SUFFIX,56bfc388bf12.com
   - DOMAIN-SUFFIX,56c30cd3c4.0d0e65883b.com
   - DOMAIN-SUFFIX,56rt2692.de
+  - DOMAIN-SUFFIX,5707f9766c.com
   - DOMAIN-SUFFIX,573569djd.com
   - DOMAIN-SUFFIX,574ae48fe5.com
   - DOMAIN-SUFFIX,57573zubo36833.com
@@ -8526,7 +8527,6 @@ payload:
   - DOMAIN-SUFFIX,bnrdom.com
   - DOMAIN-SUFFIX,bnrs.esexa.online
   - DOMAIN-SUFFIX,bnrs.it
-  - DOMAIN-SUFFIX,bnrs.manrec.cc
   - DOMAIN-SUFFIX,bnrs.shemrec.cc
   - DOMAIN-SUFFIX,bnrsis.com
   - DOMAIN-SUFFIX,bnrslks.com
@@ -15771,7 +15771,6 @@ payload:
   - DOMAIN-SUFFIX,edvfwlacluo.com
   - DOMAIN-SUFFIX,edwmpt.com
   - DOMAIN-SUFFIX,ee.sportacentrs.com
-  - DOMAIN-SUFFIX,ee2eb00cc5.5707f9766c.com
   - DOMAIN-SUFFIX,ee694ce73a.c11e6856d0.com
   - DOMAIN-SUFFIX,ee768d2e27.0f9be2e1ef.com
   - DOMAIN-SUFFIX,eeaczcf.icu
@@ -25098,6 +25097,7 @@ payload:
   - DOMAIN-SUFFIX,manomincasaque.com
   - DOMAIN-SUFFIX,manompas.com
   - DOMAIN-SUFFIX,manorfunctions.com
+  - DOMAIN-SUFFIX,manrec.cc
   - DOMAIN-SUFFIX,manrootarbota.com
   - DOMAIN-SUFFIX,mansfieldspurtvan.com
   - DOMAIN-SUFFIX,mansostowce.com
@@ -26704,6 +26704,7 @@ payload:
   - DOMAIN-SUFFIX,namtofe.com
   - DOMAIN-SUFFIX,nan0cns.com
   - DOMAIN-SUFFIX,nan46ysangt28eec.com
+  - DOMAIN-SUFFIX,nanai-clw.com
   - DOMAIN-SUFFIX,nanborderrocket.com
   - DOMAIN-SUFFIX,nancontrast.com
   - DOMAIN-SUFFIX,nandtheathema.info
@@ -26791,7 +26792,6 @@ payload:
   - DOMAIN-SUFFIX,nbcollect.kugou.com
   - DOMAIN-SUFFIX,nbcollectretry.kugou.com
   - DOMAIN-SUFFIX,nbmramf.de
-  - DOMAIN-SUFFIX,nbnrsa.manrec.cc
   - DOMAIN-SUFFIX,nboclympics.com
   - DOMAIN-SUFFIX,nbottkauyy.com
   - DOMAIN-SUFFIX,nbsdk-baichuan.taobao.com
@@ -28521,7 +28521,6 @@ payload:
   - DOMAIN-SUFFIX,otherofherlittle.info
   - DOMAIN-SUFFIX,othersides.top
   - DOMAIN-SUFFIX,otherwiseassurednessloaf.com
-  - DOMAIN-SUFFIX,otimiyk.top
   - DOMAIN-SUFFIX,otingolston.com
   - DOMAIN-SUFFIX,otisephie.com
   - DOMAIN-SUFFIX,otjawzdugg.com
@@ -30724,7 +30723,6 @@ payload:
   - DOMAIN-SUFFIX,projectwonderful.com
   - DOMAIN-SUFFIX,prolatecyclus.com
   - DOMAIN-SUFFIX,proll.esexa.online
-  - DOMAIN-SUFFIX,proll.manrec.cc
   - DOMAIN-SUFFIX,proll.shemrec.cc
   - DOMAIN-SUFFIX,prologuerussialavender.com
   - DOMAIN-SUFFIX,prologuetwinsmolecule.com
@@ -31176,7 +31174,6 @@ payload:
   - DOMAIN-SUFFIX,punctual-window.com
   - DOMAIN-SUFFIX,punctualflopsubquery.com
   - DOMAIN-SUFFIX,pundr.esexa.online
-  - DOMAIN-SUFFIX,pundr.manrec.cc
   - DOMAIN-SUFFIX,pundr.shemrec.cc
   - DOMAIN-SUFFIX,pungentsmartlyhoarse.com
   - DOMAIN-SUFFIX,punishgrantedvirus.com
@@ -35064,6 +35061,7 @@ payload:
   - DOMAIN-SUFFIX,skymedia7.me
   - DOMAIN-SUFFIX,skymobi.agency
   - DOMAIN-SUFFIX,skyscraperearnings.com
+  - DOMAIN-SUFFIX,skyscrapertowel.com
   - DOMAIN-SUFFIX,skytraf.xyz
   - DOMAIN-SUFFIX,sl-h-statistics-ch-1.storeland.ru
   - DOMAIN-SUFFIX,sl.elinvarpayola.com
