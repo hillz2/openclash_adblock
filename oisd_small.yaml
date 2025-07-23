@@ -1,9 +1,9 @@
-# Version: 202507230219
+# Version: 202507230654
 # Title: oisd small
 # Description: Block. Don't break.
 # Syntax: Domains (wildcards)
-# Entries: 43360
-# Last modified: 2025-07-23T02:19:50+0000
+# Entries: 43365
+# Last modified: 2025-07-23T06:54:50+0000
 # Expires: 1 hours
 # License: https://github.com/sjhgvr/oisd/blob/main/LICENSE
 # Maintainer: Stephan van Ruth
@@ -599,7 +599,6 @@ payload:
   - DOMAIN-SUFFIX,2c4rrl8pe.de
   - DOMAIN-SUFFIX,2c5d30b6f1.com
   - DOMAIN-SUFFIX,2cba2742a4.com
-  - DOMAIN-SUFFIX,2cdf9a61f4.4f31c6ef07.com
   - DOMAIN-SUFFIX,2cjlj3c15.de
   - DOMAIN-SUFFIX,2cnjuh34jbhub.com
   - DOMAIN-SUFFIX,2cnjuh34jbman.com
@@ -985,6 +984,7 @@ payload:
   - DOMAIN-SUFFIX,4ever.cc
   - DOMAIN-SUFFIX,4f1fca8377.2ea4fb5aea.com
   - DOMAIN-SUFFIX,4f2sm1y1ss.com
+  - DOMAIN-SUFFIX,4f31c6ef07.com
   - DOMAIN-SUFFIX,4f3tsea1m.com
   - DOMAIN-SUFFIX,4f9566374d.com
   - DOMAIN-SUFFIX,4fdd7f4b.xyz
@@ -2519,7 +2519,6 @@ payload:
   - DOMAIN-SUFFIX,ad-scope.com.cn
   - DOMAIN-SUFFIX,ad-score.com
   - DOMAIN-SUFFIX,ad-sdk-config.youdao.com
-  - DOMAIN-SUFFIX,ad-sdk.huxiu.com
   - DOMAIN-SUFFIX,ad-seek.jp
   - DOMAIN-SUFFIX,ad-serve.b-cdn.net
   - DOMAIN-SUFFIX,ad-server.co.za
@@ -3655,7 +3654,6 @@ payload:
   - DOMAIN-SUFFIX,ads.msn.com
   - DOMAIN-SUFFIX,ads.multimania.lycos.fr
   - DOMAIN-SUFFIX,ads.museum.or.jp
-  - DOMAIN-SUFFIX,ads.music.126.net
   - DOMAIN-SUFFIX,ads.networksolutions.com
   - DOMAIN-SUFFIX,ads.newgrounds.com
   - DOMAIN-SUFFIX,ads.newmedia.cz
@@ -6242,6 +6240,7 @@ payload:
   - DOMAIN-SUFFIX,api.fastmoonclimbed.com
   - DOMAIN-SUFFIX,api.floatingcarforgotten.com
   - DOMAIN-SUFFIX,api.flocktory.com
+  - DOMAIN-SUFFIX,api.fu.xcultur.com
   - DOMAIN-SUFFIX,api.fusepowered.com
   - DOMAIN-SUFFIX,api.fw.tv
   - DOMAIN-SUFFIX,api.getblaze.app
@@ -6283,6 +6282,7 @@ payload:
   - DOMAIN-SUFFIX,api.smartnews-ads.com
   - DOMAIN-SUFFIX,api.smilingtrainyellow.com
   - DOMAIN-SUFFIX,api.sprig.com
+  - DOMAIN-SUFFIX,api.ssp.xcultur.com
   - DOMAIN-SUFFIX,api.statsig.com
   - DOMAIN-SUFFIX,api.subiz.com.vn
   - DOMAIN-SUFFIX,api.subiz.net
@@ -6746,7 +6746,6 @@ payload:
   - DOMAIN-SUFFIX,asg.hornygrail.com
   - DOMAIN-SUFFIX,asg.irontube.net
   - DOMAIN-SUFFIX,asg.javhoho.com
-  - DOMAIN-SUFFIX,asg.mainos.pro
   - DOMAIN-SUFFIX,asg.mrporn.online
   - DOMAIN-SUFFIX,asg.page-x.com
   - DOMAIN-SUFFIX,asg.pienude.com
@@ -24783,6 +24782,7 @@ payload:
   - DOMAIN-SUFFIX,mainadcenter.com
   - DOMAIN-SUFFIX,mainadv.com
   - DOMAIN-SUFFIX,mainexclkdir.com
+  - DOMAIN-SUFFIX,mainos.pro
   - DOMAIN-SUFFIX,mainroll.com
   - DOMAIN-SUFFIX,maintainedencircle.com
   - DOMAIN-SUFFIX,mainting-minues.xyz
@@ -25525,7 +25525,6 @@ payload:
   - DOMAIN-SUFFIX,milordearnful.digital
   - DOMAIN-SUFFIX,miltlametta.com
   - DOMAIN-SUFFIX,miluwo.com
-  - DOMAIN-SUFFIX,mime.baidu.com
   - DOMAIN-SUFFIX,mimekitab.shop
   - DOMAIN-SUFFIX,mimerestates.top
   - DOMAIN-SUFFIX,mimicbeeralb.com
@@ -26438,7 +26437,6 @@ payload:
   - DOMAIN-SUFFIX,n0ocxl4w5g.top
   - DOMAIN-SUFFIX,n0usvkb1x.com
   - DOMAIN-SUFFIX,n0v1cdn.com
-  - DOMAIN-SUFFIX,n10.xyz
   - DOMAIN-SUFFIX,n1307adserv.xyz
   - DOMAIN-SUFFIX,n152adserv.com
   - DOMAIN-SUFFIX,n1g459ky7y.com
@@ -27214,7 +27212,6 @@ payload:
   - DOMAIN-SUFFIX,nsfwadds.com
   - DOMAIN-SUFFIX,nsis.bisrv.com
   - DOMAIN-SUFFIX,nskyfqigltino.space
-  - DOMAIN-SUFFIX,nsmedia-advertising.com
   - DOMAIN-SUFFIX,nsmpydfe.net
   - DOMAIN-SUFFIX,nspmotion.com
   - DOMAIN-SUFFIX,nspot.co
@@ -30331,6 +30328,7 @@ payload:
   - DOMAIN-SUFFIX,promoted.sndcdn.com
   - DOMAIN-SUFFIX,promoted.soundcloud.com
   - DOMAIN-SUFFIX,promotion-en.xmeye.net
+  - DOMAIN-SUFFIX,promotion-partner.kuaishou.com
   - DOMAIN-SUFFIX,promotion-quicker.jftechsoft.com
   - DOMAIN-SUFFIX,promotion.haravan.com
   - DOMAIN-SUFFIX,promotion.polarisoffice.com
@@ -37570,13 +37568,21 @@ payload:
   - DOMAIN-SUFFIX,tnaczwecikco.online
   - DOMAIN-SUFFIX,tnc-boot.capcutapi.com
   - DOMAIN-SUFFIX,tnc-sg.capcutapi.com
+  - DOMAIN-SUFFIX,tnc0-aliec2.zijieapi.com
+  - DOMAIN-SUFFIX,tnc0-alisc1.zijieapi.com
+  - DOMAIN-SUFFIX,tnc0-bjlgy.zijieapi.com
   - DOMAIN-SUFFIX,tnc16-alisg.isnssdk.com
   - DOMAIN-SUFFIX,tnc16-useast1a.isnssdk.com
   - DOMAIN-SUFFIX,tnc3-aliec2.bytedance.com
+  - DOMAIN-SUFFIX,tnc3-aliec2.snssdk.com
   - DOMAIN-SUFFIX,tnc3-aliec2.toutiaoapi.com
+  - DOMAIN-SUFFIX,tnc3-aliec2.zijieapi.com
   - DOMAIN-SUFFIX,tnc3-alisc1.bytedance.com
+  - DOMAIN-SUFFIX,tnc3-alisc1.snssdk.com
+  - DOMAIN-SUFFIX,tnc3-alisc1.toutiaoapi.com
   - DOMAIN-SUFFIX,tnc3-alisc1.zijieapi.com
   - DOMAIN-SUFFIX,tnc3-bjlgy.bytedance.com
+  - DOMAIN-SUFFIX,tnc3-bjlgy.snssdk.com
   - DOMAIN-SUFFIX,tnc3-bjlgy.toutiaoapi.com
   - DOMAIN-SUFFIX,tnc3-bjlgy.zijieapi.com
   - DOMAIN-SUFFIX,tneca.com
@@ -41762,7 +41768,6 @@ payload:
   - DOMAIN-SUFFIX,xcrghf.xyz
   - DOMAIN-SUFFIX,xctoquhnalqgn.vip
   - DOMAIN-SUFFIX,xcuffrzha.com
-  - DOMAIN-SUFFIX,xcultur.com
   - DOMAIN-SUFFIX,xcwsseexxpbfx.website
   - DOMAIN-SUFFIX,xd51vd1y.xyz
   - DOMAIN-SUFFIX,xdifjhbyqxdbg.website
