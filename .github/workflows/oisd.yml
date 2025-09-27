@@ -18,6 +18,10 @@ jobs:
           sed -i 's/^[*]\./  - DOMAIN-SUFFIX,/g' oisd_big.yaml
           rm -fr oisd_big.yamle oisd_big_domainswild.txt
 
+          curl -s 'https://big.oisd.nl/' -o ob_passwall.txt
+          grep '||.*\^' ob_passwall.txt | sed 's/||\(.*\)\^/\1/' > oisd_big_passwall.txt
+          rm -fr ob_passwall.txt
+
           echo "Downloading oisd small block list..."
           curl -s 'https://small.oisd.nl/domainswild' -o oisd_small_domainswild.txt
           awk '/^\*\./ && !x {print "# OpenClash AdBlock: https://github.com/hillz2/openclash_adblock \n\npayload:"; x=1} 1' oisd_small_domainswild.txt > oisd_small.yaml
