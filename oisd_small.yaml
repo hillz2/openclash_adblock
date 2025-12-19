@@ -1,9 +1,9 @@
-# Version: 202512180309
+# Version: 202512181631
 # Title: oisd small
 # Description: Block. Don't break.
 # Syntax: Domains (wildcards)
-# Entries: 47404
-# Last modified: 2025-12-18T03:09:59+0000
+# Entries: 47405
+# Last modified: 2025-12-18T16:31:34+0000
 # Expires: 1 hours
 # License: https://github.com/sjhgvr/oisd/blob/main/LICENSE
 # Maintainer: Stephan van Ruth
@@ -36075,6 +36075,7 @@ payload:
   - DOMAIN-SUFFIX,sdk4push.com
   - DOMAIN-SUFFIX,sdkapi-prod.dfinery.ai
   - DOMAIN-SUFFIX,sdkauth.hpplay.cn
+  - DOMAIN-SUFFIX,sdkc.vervegroupinc.net
   - DOMAIN-SUFFIX,sdkconf.avlyun.com
   - DOMAIN-SUFFIX,sdkconfig.video.qq.com
   - DOMAIN-SUFFIX,sdkl.info
