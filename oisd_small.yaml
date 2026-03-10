@@ -1,9 +1,9 @@
-# Version: 202603100111
+# Version: 202603100608
 # Title: oisd small
 # Description: Block. Don't break.
 # Syntax: Domains (wildcards)
-# Entries: 49953
-# Last modified: 2026-03-10T01:11:55+0000
+# Entries: 49955
+# Last modified: 2026-03-10T06:08:40+0000
 # Expires: 1 hours
 # License: https://github.com/sjhgvr/oisd/blob/main/LICENSE
 # Maintainer: Stephan van Ruth
@@ -10507,6 +10507,7 @@ payload:
   - DOMAIN-SUFFIX,click-eu-v4.exclk.com
   - DOMAIN-SUFFIX,click-eu-v4.exmnclk.com
   - DOMAIN-SUFFIX,click-eu-v4.exoclkneu.com
+  - DOMAIN-SUFFIX,click-eu-v4.expmclck.com
   - DOMAIN-SUFFIX,click-eu-v4.expmidclk.com
   - DOMAIN-SUFFIX,click-eu-v4.exppxxclck.com
   - DOMAIN-SUFFIX,click-eu-v4.plarclck.com
@@ -10531,6 +10532,7 @@ payload:
   - DOMAIN-SUFFIX,click-v4.exmnclk.com
   - DOMAIN-SUFFIX,click-v4.exoclkneu.com
   - DOMAIN-SUFFIX,click-v4.explodnmainclck.com
+  - DOMAIN-SUFFIX,click-v4.expmclck.com
   - DOMAIN-SUFFIX,click-v4.expmidclk.com
   - DOMAIN-SUFFIX,click-v4.exppxxclck.com
   - DOMAIN-SUFFIX,click-v4.fidmkrclk.com
@@ -10556,6 +10558,7 @@ payload:
   - DOMAIN-SUFFIX,click.exclk.com
   - DOMAIN-SUFFIX,click.exmnclk.com
   - DOMAIN-SUFFIX,click.exoclkneu.com
+  - DOMAIN-SUFFIX,click.expmclck.com
   - DOMAIN-SUFFIX,click.expmidclk.com
   - DOMAIN-SUFFIX,click.exppxxclck.com
   - DOMAIN-SUFFIX,click.fool.com
@@ -17377,7 +17380,6 @@ payload:
   - DOMAIN-SUFFIX,explorads.com
   - DOMAIN-SUFFIX,explorerapiecebachelor.com
   - DOMAIN-SUFFIX,explorerippledisperse.com
-  - DOMAIN-SUFFIX,expmclck.com
   - DOMAIN-SUFFIX,expmnclick.com
   - DOMAIN-SUFFIX,expoclknu.com
   - DOMAIN-SUFFIX,expocrack.com
