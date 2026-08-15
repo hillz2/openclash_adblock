@@ -2,10 +2,10 @@
 # OpenClash AdBlock: https://github.com/hillz2/openclash_adblock
 
 payload:
-  - DOMAIN-SUFFIX,# Version: 202608131400
+  - DOMAIN-SUFFIX,# Version: 202608150246
   - DOMAIN-SUFFIX,# Title: ABPindo (hosts)
   - DOMAIN-SUFFIX,# Description: ABPindo hosts file — blocks ad domains for Indonesian and Malaysian sites.
-  - DOMAIN-SUFFIX,# Last modified: 13 Aug 2026 14:00 UTC
+  - DOMAIN-SUFFIX,# Last modified: 15 Aug 2026 02:46 UTC
   - DOMAIN-SUFFIX,# Expires: 4 days (update frequency)
   - DOMAIN-SUFFIX,# Homepage: https://github.com/ABPindo/indonesianadblockrules/
   - DOMAIN-SUFFIX,# License: https://raw.githubusercontent.com/ABPindo/indonesianadblockrules/master/LICENSE
@@ -16,14 +16,11 @@ payload:
   - DOMAIN-SUFFIX,#
   - DOMAIN-SUFFIX,# *** abpindo:src/advert/adservers.txt ***
   - DOMAIN-SUFFIX,# Confirmed ad servers
-  - DOMAIN-SUFFIX,188affiliates.com
   - DOMAIN-SUFFIX,accesstrade.co.id
   - DOMAIN-SUFFIX,ad-loupe.com
   - DOMAIN-SUFFIX,addesigner.com
   - DOMAIN-SUFFIX,adeumssp.com
   - DOMAIN-SUFFIX,admarketplace.net
-  - DOMAIN-SUFFIX,adnety.com
-  - DOMAIN-SUFFIX,adpop-1.com
   - DOMAIN-SUFFIX,adreach.co
   - DOMAIN-SUFFIX,ads.d21.media
   - DOMAIN-SUFFIX,ads.indosatooredoo.com
@@ -64,10 +61,8 @@ payload:
   - DOMAIN-SUFFIX,iklantelevisi.com
   - DOMAIN-SUFFIX,iklantext.com
   - DOMAIN-SUFFIX,iklanumum.com
-  - DOMAIN-SUFFIX,indobanner.com
   - DOMAIN-SUFFIX,istanaimpian1.com
   - DOMAIN-SUFFIX,istanaimpian2.com
-  - DOMAIN-SUFFIX,istanaimpian3.com
   - DOMAIN-SUFFIX,jagopromo.com
   - DOMAIN-SUFFIX,jasaiklan.com
   - DOMAIN-SUFFIX,klikajadeh.com
@@ -75,7 +70,6 @@ payload:
   - DOMAIN-SUFFIX,mesiniklan.andipublisher.com
   - DOMAIN-SUFFIX,offdeck.telkomsel.com
   - DOMAIN-SUFFIX,openadserving.com
-  - DOMAIN-SUFFIX,padssup.com
   - DOMAIN-SUFFIX,paidforfree.com
   - DOMAIN-SUFFIX,pasangiklan.com
   - DOMAIN-SUFFIX,paypopup.com
@@ -103,16 +97,13 @@ payload:
   - DOMAIN-SUFFIX,webiklan.com
   - DOMAIN-SUFFIX,yesads.com
   - DOMAIN-SUFFIX,# Potential ad servers
-  - DOMAIN-SUFFIX,64p3am9x95ct.com
   - DOMAIN-SUFFIX,9eb10b7a3d04a.com
   - DOMAIN-SUFFIX,a.magsrv.com
   - DOMAIN-SUFFIX,adplus.co.id
   - DOMAIN-SUFFIX,afbcashidr.com
   - DOMAIN-SUFFIX,auredzeon.com
-  - DOMAIN-SUFFIX,baliadv.com
   - DOMAIN-SUFFIX,bondeddarkenedswerve.com
   - DOMAIN-SUFFIX,brand.ad
-  - DOMAIN-SUFFIX,caribanner.bid
   - DOMAIN-SUFFIX,dairouzy.net
   - DOMAIN-SUFFIX,doathair.com
   - DOMAIN-SUFFIX,edomz.com
@@ -127,12 +118,8 @@ payload:
   - DOMAIN-SUFFIX,mousheen.net
   - DOMAIN-SUFFIX,octafx.com
   - DOMAIN-SUFFIX,poweredby.jads.co
-  - DOMAIN-SUFFIX,promobagus.com
-  - DOMAIN-SUFFIX,pusatiklan.com
   - DOMAIN-SUFFIX,realwap.net
   - DOMAIN-SUFFIX,sebar.idblognetwork.com
-  - DOMAIN-SUFFIX,shqbsdjatunl.com
-  - DOMAIN-SUFFIX,sumberiklan.com
   - DOMAIN-SUFFIX,villainoussession.com
   - DOMAIN-SUFFIX,vkwaeo.com
   - DOMAIN-SUFFIX,yllix.com
@@ -155,7 +142,6 @@ payload:
   - DOMAIN-SUFFIX,kegz.site
   - DOMAIN-SUFFIX,klik.zeus.fun
   - DOMAIN-SUFFIX,klik4.me
-  - DOMAIN-SUFFIX,luxury111.bio
   - DOMAIN-SUFFIX,menujupenta.site
   - DOMAIN-SUFFIX,moneyfree.co
   - DOMAIN-SUFFIX,nf.diamberproetid.com
